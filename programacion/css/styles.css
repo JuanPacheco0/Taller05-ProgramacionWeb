@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#calendar {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#dias{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color:#711fc2;
+}
+
+#calendarView {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+#calendarView div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.event {
+    background-color: mediumslateblue;
+    margin-top: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#eventForm {
+    max-width: 400px;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+}
+
+#eventForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+#eventForm label, #eventForm input, #eventForm select, #eventForm button {
+    margin-bottom: 10px;
+}
